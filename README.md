@@ -1,4 +1,25 @@
-# Species_Classfication_CNN
-Your project is a **Bird Species Classification System** using **deep learning** with **TensorFlow** and **MobileNetV2**. It trains a CNN model on bird images, evaluates performance using metrics like accuracy and F1-score, and predicts bird species from new images. Visualization tools display dataset distribution and class-wise accuracy.
+# 🐦 Bird Species Classifier (MobileNetV2 + Transfer Learning)
 
-Training Data consists of several different species and by training the model it helps to predict the species of the bird from new images
+A deep learning project built with **TensorFlow** and **Keras**, designed to classify bird species from images. It uses **MobileNetV2** for transfer learning, along with data augmentation, class-wise evaluation metrics, and visualization graphs.
+
+---
+
+## 🚀 Features
+
+- 🧠 **Transfer Learning** using pre-trained MobileNetV2
+- 📸 **Real-time Image Prediction** via terminal input
+- 📊 **Evaluation Dashboard**:
+  - Confusion Matrix Heatmap
+  - Class-wise Accuracy Bar Chart
+  - Dataset Distribution Visualization
+- ⚙️ **Enhanced Data Augmentation** for robust model training
+- 💾 Saves and loads model from `bird_classifier.h5`
+
+---
+
+## 🧠 Model Architecture
+
+- Base: `MobileNetV2` (Frozen layers)
+- Global Average Pooling
+- Dense Layer: 512 units + ReLU + Dropout
+- Output Layer: `softmax` activation for multi-class classification
